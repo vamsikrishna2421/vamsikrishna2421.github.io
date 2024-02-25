@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Donation page</title>
+         <link rel="icon" href="assets/img/icon1.png" type="image/ico"> 
+        <!-- The stylesheet -->
+        <link rel="stylesheet" href="assets/css/donate-style.css" />
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .gobackbtn{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    padding: 10px 8px;
+    color: #f442c2;
+    border: 0;
+    background-color:#42f442;
+    box-shadow: 3px 3px 3px #59bc1c; 
+}
+
+    </style>
+    
+    <body>
+          <button class="gobackbtn" onclick="goBack()">Go Back</button>
+
+            <script>
+            function goBack() {
+                window.history.back();
+            }
+            </script>
+
+        <div id="main">
+        	
+        	<h1>Donate for Happiness!</h1>
+        	
+        	<form class="" method="post" action="">
+        		
+        		<div class="row">
+	    			<input type="text" id="name" name="name" placeholder="Name" />
+        		</div>
+        		
+        		<div class="row pass">
+        			<input type="text" id="password1" name="password1" placeholder="Amount of Donation" />
+        		</div>
+        		
+        		
+        		<!-- The rotating arrow -->
+        		<div class="arrowCap"></div>
+        		<div class="arrow"></div>
+        		
+        		<p class="meterText">Power of Donation</p>
+        		
+        		<input style="margin-top: 20px;" type="submit" value="Donate now!" />
+        		
+        	</form>
+        </div>
+        
+        <!-- JavaScript includes - jQuery, the complexify plugin and our own script.js -->
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="assets/js/jquery.complexify.js"></script>
+		<script src="assets/js/script.js"></script>
+		     
+    </body>
+</html>
